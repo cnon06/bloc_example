@@ -11,7 +11,7 @@ class CounterPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Counter')),
       body: BlocBuilder<CounterCubit, int>(
-        builder: (context, count) => Center(child: Text('$count')),
+        builder: (context, count) => Center(child: Text('$count', style: const TextStyle(fontSize: 40),)),
       ),
       floatingActionButton: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
